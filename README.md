@@ -13,8 +13,12 @@
 
 ### Links
 [Presentation](https://docs.google.com/presentation/d/15ReH73ckD4kU4OfbE6p0_4IH5iOdUybCF8ErZlP1mZI/edit#slide=id.g59d6898307_0_0)
+
+[Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
+
+[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
+
 [Tableau: expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
-[Tableau](url)
 
 ## Project Outline
 
@@ -57,7 +61,9 @@ We furthermore used the normalization and standardization for the numerical colu
 
 The next step was to encode the categorical columns and run the third iteration: train R2: 78% -- test R2: 73%, which is better than the result of the first iteration. 
 
-[to the Jupyter Notebook](url)
+![Screenshot 2021-04-22 at 17 04 25](https://user-images.githubusercontent.com/81168853/115740804-785ddc00-a38f-11eb-9cc1-f52230e25293.png)
+
+[to the Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
 
 ## Review and Outlook
 The features for house prices above $650.000 are the condition, the house size, area and the grade. 
