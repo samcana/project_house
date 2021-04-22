@@ -10,15 +10,7 @@
 - [Visualisation](#visualisation)
 - [Machine Learning](#machine-learning)
 - [Review and Outlook](#review-and-outlook)
-
-### Links
-[Presentation](https://docs.google.com/presentation/d/15ReH73ckD4kU4OfbE6p0_4IH5iOdUybCF8ErZlP1mZI/edit#slide=id.g59d6898307_0_0)
-
-[Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
-
-[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
-
-[Tableau: expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
+- [Links](#links)
 
 ## Project Outline
 
@@ -53,14 +45,14 @@ In the first iteration of the machine learning the accuracy score was R2: 73% --
 This was after we had introducted the column areas. The binning of the columns yr_renovated, yr_built and bathroom were making the accuracy of the first iteration worse, so we decided to undo that. 
 
 Before the second iteration to improve we implied several data pre-processing steps. The logarithmic transformation for the sqft columns, for which we plotted the histograms and the qq method graph. For three of the size (sqft) columns this was a better fit. We dropped the basement size column to simplify, otherwise we could have dealt with the zeros (house has no basement). 
-
+The graphs show that after the logarithmic transformation the histogram is close to a normal distribution. 
 ![Bildschirmfoto 2021-04-22 um 16 38 02](https://user-images.githubusercontent.com/81168853/115733627-57928800-a389-11eb-9051-cd2ee816c3da.png)
 ![Bildschirmfoto 2021-04-22 um 16 38 10](https://user-images.githubusercontent.com/81168853/115733644-5b260f00-a389-11eb-873b-c3b32a4b4601.png)
 
 We furthermore used the normalization and standardization for the numerical columns. Unfortunately after these 3 steps the model accuracy dropped to train R2: 70% -- test R2: 66%.
 
 The next step was to encode the categorical columns and run the third iteration: train R2: 78% -- test R2: 73%, which is better than the result of the first iteration. 
-
+The graph shows that there are a few outliers that differ from the ideal model line. A quantile handling of the squarefoot lot like described in the outlook can be a way to improve this result.
 ![Screenshot 2021-04-22 at 17 04 25](https://user-images.githubusercontent.com/81168853/115740804-785ddc00-a38f-11eb-9cc1-f52230e25293.png)
 
 [to the Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
@@ -73,3 +65,12 @@ More features can be explored in terms of their factor in driving the house pric
 The accuracy of the model was improved mainly by encoding the categorical columns. There can be more research in how the other data pre-processing steps have had an improving effect on the accuracy of the model by testing them isolated. 
 
 As an outlook another step is to deal with the outliers of the sqft_lot15 column, which is the whole property of the house. The upper 25% of very large properties are 440 data rows, which can be removed and the accuracy score of the model be improved again.   
+
+## Links
+[Presentation](https://docs.google.com/presentation/d/15ReH73ckD4kU4OfbE6p0_4IH5iOdUybCF8ErZlP1mZI/edit#slide=id.g59d6898307_0_0)
+
+[Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
+
+[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
+
+[Tableau: expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
