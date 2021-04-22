@@ -17,7 +17,8 @@
 We build a machine learning model for a real estate company to predict the selling prices of houses based on a variety of features on which the value of the house is evaluated. 
 Senior management also wants to explore the characteristics of the houses using some business intelligence tools. One of those parameters includes understanding which factors are responsible for higher property value - $650K and above.
 
-![ProjectProcess](https://user-images.githubusercontent.com/81168853/115700547-10939b00-a367-11eb-87b7-4a8cf22dd681.png)
+![Project_process](https://user-images.githubusercontent.com/81168853/115729162-7858de80-a385-11eb-9281-ccc290097ab7.png)
+
 More on our workflow: [Trello Board](https://trello.com/b/ebLY8eYt/realestateproject)
 
 Process Documentation: [Log file](doc/Project Log)
