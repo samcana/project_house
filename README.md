@@ -9,8 +9,7 @@
 - [The Data](#the-data)
 - [Visualisation](#visualisation)
 - [Machine Learning](#machine-learning)
-- [Insights](#insights)
-- [Review](#review)
+- [Review and Outlook](#review-and-outlook)
 
 ## Project Outline
 
@@ -40,19 +39,21 @@ The trend for the grade compared to the house price is more clear. With better g
 ![Condition_view](https://user-images.githubusercontent.com/81168853/115725250-f915db80-a381-11eb-8fee-f33ab584eb4d.png)
 
 ## Machine Learning 
-In the first iteration of the machine learning the accuracy score was  R2: 73% -- test R2: 72%
+In the first iteration of the machine learning the accuracy score was R2: 73% -- test R2: 72%.
+
 This was after we had introducted the column areas. The binning of the columns yr_renovated, yr_built and bathroom were making the accuracy of the first iteration worse, so we decided to undo that. 
+
 Before the second iteration to improve we implied several data pre-processing steps. The logarithmic transformation for the sqft columns, for which we plotted the histograms and the qq method graph. For three of the size (sqft) columns this was a better fit. We dropped the basement size column to simplify, otherwise we could have dealt with the zeros (house has no basement). 
+
+![Bildschirmfoto 2021-04-22 um 16 38 02](https://user-images.githubusercontent.com/81168853/115733627-57928800-a389-11eb-9051-cd2ee816c3da.png)
+![Bildschirmfoto 2021-04-22 um 16 38 10](https://user-images.githubusercontent.com/81168853/115733644-5b260f00-a389-11eb-873b-c3b32a4b4601.png)
+
 We furthermore used the normalization and standardization for the numerical columns. Unfortunately after these 3 steps the model accuracy dropped to train R2: 70% -- test R2: 66%.
+
 The next step was to encode the categorical columns and run the third iteration: train R2: 78% -- test R2: 73%, which is better than the result of the first iteration. 
 
+[to the Jupyter Notebook](url)
 
-
-
-
-
-
-## Insights
-
-## Review
-
+## Review and Outloook
+The accuracy of the model was improved mainly by encoding the categorical columns. There can be more research in how the other data pre-processing steps have had an improving effect on the accuracy of the model by testing them isolated. 
+As an outlook another step is to deal with the outliers of the sqft_lot15 column, which is the whole property of the house. The upper 25% of very large properties are 440 data rows, which can be removed and the accuracy score of the model be improved again.   
