@@ -25,7 +25,8 @@ Process Documentation: [Log file](https://docs.google.com/document/d/1vGG2OElHPC
 
 ## The Data
 
-The data contains many categorical features such as the view, condition, number of bedrooms of the houses, as well as numerical features such as squarefoot of the property, house, basement and price of the houses. 
+![Bildschirmfoto 2021-04-22 um 17 45 21](https://user-images.githubusercontent.com/81168853/115744104-8d883a00-a392-11eb-9ef3-4654a0902a26.png)
+We have a dataset of sold houses located in Seattle. The data contains many categorical features such as the view, condition, number of bedrooms of the houses, as well as numerical features such as squarefoot of the property, house, basement and price of the houses. 
 The highest correlation in the data were between sqft_living and sqft_above with 88%, which we found through a heatmap. One of the features we dropped was therefore the sqft_living column. 
 After having visualised the areas during EDA in Tableau, we created 4 areas to which we assigned the zipcodes. The 4 areas increase by increasing price per price per squarefoot. We created bins for the columns yr_renovated, yr_built and bathroom. 
 We removed an outlier (33) in the number of bedrooms and changed the datetime format of the selling date as well as the categorical features to strings.
@@ -60,7 +61,7 @@ The next step was to encode the categorical columns and run the third iteration:
 The graph shows that there are a few outliers that differ from the ideal model line. A quantile handling of the squarefoot lot like described in the outlook can be a way to improve this result.
 ![Screenshot 2021-04-22 at 17 04 25](https://user-images.githubusercontent.com/81168853/115740804-785ddc00-a38f-11eb-9cc1-f52230e25293.png)
 
-[to the Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
+[to the Jupyter Notebook](https://github.com/samcana/project_house/blob/main/JupyterNotebook/machine_learning_real_estate.ipynb)
 
 ## Review and Outlook
 The features for house prices above $650.000 are the condition, the house size, area and the grade. 
@@ -74,7 +75,7 @@ As an outlook another step is to deal with the outliers of the sqft_lot15 column
 ## Links
 [Presentation](https://docs.google.com/presentation/d/15ReH73ckD4kU4OfbE6p0_4IH5iOdUybCF8ErZlP1mZI/edit#slide=id.g59d6898307_0_0)
 
-[Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
+[Jupyter Notebook](https://github.com/samcana/project_house/blob/main/JupyterNotebook/machine_learning_real_estate.ipynb)
 
 [Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Project_House_Story?publish=yes)
 
