@@ -35,11 +35,14 @@ We removed an outlier (33) in the number of bedrooms and changed the datetime fo
 No duplicates or null values were found in the data. 
 
 ## Visualisation
+
 For the house sizes we found there is a trend for increasing prices with increasing house size. However the scatter plot also shows a density of data points for a regular house size. There is a reference line at $650.000 houses to compare the difference to the cheaper houses.
+
 ![House_size](https://user-images.githubusercontent.com/81168853/115725218-f0bda080-a381-11eb-9c47-68dc8d388599.png)
 
 When drilling down into condition and grade you can see that the condition is at least at 3 for houses priced above $650.000. However most houses if above or below 650k are in condition 3. 
 The trend for the grade compared to the house price is more clear. With better grades the house prices increase. 
+
 ![Condition_view](https://user-images.githubusercontent.com/81168853/115725250-f915db80-a381-11eb-8fee-f33ab584eb4d.png)
 
 [Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Project_House_Story?publish=yes)
@@ -61,6 +64,7 @@ We furthermore used the normalization and standardization for the numerical colu
 
 The next step was to encode the categorical columns and run the third iteration: train R2: 78% -- test R2: 73%, which is better than the result of the first iteration. 
 The graph shows that there are a few outliers that differ from the ideal model line. A quantile handling of the squarefoot lot like described in the outlook can be a way to improve this result.
+
 ![Screenshot 2021-04-22 at 17 04 25](https://user-images.githubusercontent.com/81168853/115740804-785ddc00-a38f-11eb-9cc1-f52230e25293.png)
 
 [to the Jupyter Notebook](https://github.com/samcana/project_house/blob/main/JupyterNotebook/machine_learning_real_estate.ipynb)
