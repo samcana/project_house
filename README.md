@@ -11,6 +11,11 @@
 - [Machine Learning](#machine-learning)
 - [Review and Outlook](#review-and-outlook)
 
+### Links
+[Presentation](https://docs.google.com/presentation/d/15ReH73ckD4kU4OfbE6p0_4IH5iOdUybCF8ErZlP1mZI/edit#slide=id.g59d6898307_0_0)
+[Tableau: expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
+[Tableau](url)
+
 ## Project Outline
 
 We build a machine learning model for a real estate company to predict the selling prices of houses based on a variety of features on which the value of the house is evaluated. 
@@ -54,6 +59,11 @@ The next step was to encode the categorical columns and run the third iteration:
 
 [to the Jupyter Notebook](url)
 
-## Review and Outloook
+## Review and Outlook
+The features for house prices above $650.000 are the condition, the house size, area and the grade. 
+
+More features can be explored in terms of their factor in driving the house prices up.
+
 The accuracy of the model was improved mainly by encoding the categorical columns. There can be more research in how the other data pre-processing steps have had an improving effect on the accuracy of the model by testing them isolated. 
+
 As an outlook another step is to deal with the outliers of the sqft_lot15 column, which is the whole property of the house. The upper 25% of very large properties are 440 data rows, which can be removed and the accuracy score of the model be improved again.   
