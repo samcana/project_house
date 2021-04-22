@@ -1,6 +1,6 @@
 # Real Estate Project 
 ## IronHack Mid-Bootcamp Project 
-### [Sam Katterfield](https://github.com/samcana) & [Isabel Jabs](https://github.com/IsabelJabs)
+### [Isabel Jabs](https://github.com/IsabelJabs) & [Sam Katterfield](https://github.com/samcana)
 ### April 2021
 
 ## Content
