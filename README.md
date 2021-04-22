@@ -71,7 +71,7 @@ More features can be explored in terms of their factor in driving the house pric
 
 The accuracy of the model was improved mainly by encoding the categorical columns. There can be more research in how the other data pre-processing steps have had an improving effect on the accuracy of the model by testing them isolated. 
 
-As an outlook another step is to deal with the outliers of the sqft_lot15 column, which is the whole property of the house. The upper 25% of very large properties are 440 data rows, which can be removed and the accuracy score of the model be improved again.   
+As an outlook another step is to deal with the outliers of the sqft_lot15 column, which is the whole property of the house. The upper 25% of very large properties are 440 data rows, which can be removed and the accuracy score of the model be improved again..   
 
 ## Links
 [Presentation](https://docs.google.com/presentation/d/15ReH73ckD4kU4OfbE6p0_4IH5iOdUybCF8ErZlP1mZI/edit#slide=id.g59d6898307_0_0)
