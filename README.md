@@ -39,13 +39,18 @@ With the features condition and grade you can see that the condition is at least
 The trend for the grade compared to the house price is more clear. With better grades the house prices increase. 
 ![Condition_view](https://user-images.githubusercontent.com/81168853/115725250-f915db80-a381-11eb-8fee-f33ab584eb4d.png)
 
+[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
+[Tableau: Expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
+
 ## Machine Learning 
 In the first iteration of the machine learning the accuracy score was R2: 73% -- test R2: 72%.
 
 This was after we had introducted the column areas. The binning of the columns yr_renovated, yr_built and bathroom were making the accuracy of the first iteration worse, so we decided to undo that. 
 
 Before the second iteration to improve we implied several data pre-processing steps. The logarithmic transformation for the sqft columns, for which we plotted the histograms and the qq method graph. For three of the size (sqft) columns this was a better fit. We dropped the basement size column to simplify, otherwise we could have dealt with the zeros (house has no basement). 
+
 The graphs show that after the logarithmic transformation the histogram is close to a normal distribution. 
+
 ![Bildschirmfoto 2021-04-22 um 16 38 02](https://user-images.githubusercontent.com/81168853/115733627-57928800-a389-11eb-9051-cd2ee816c3da.png)
 ![Bildschirmfoto 2021-04-22 um 16 38 10](https://user-images.githubusercontent.com/81168853/115733644-5b260f00-a389-11eb-873b-c3b32a4b4601.png)
 
@@ -73,4 +78,4 @@ As an outlook another step is to deal with the outliers of the sqft_lot15 column
 
 [Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
 
-[Tableau: expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
+[Tableau: Expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
