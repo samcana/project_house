@@ -21,19 +21,15 @@ Senior management also wants to explore the characteristics of the houses using 
 
 More on our workflow: [Trello Board](https://trello.com/b/ebLY8eYt/realestateproject)
 
-Process Documentation: [Log file](doc/Project Log)
+Process Documentation: [Log file](https://docs.google.com/document/d/1vGG2OElHPCnsIPhQQ6l-QAzZkvlcBCnOHNquINd_YxM)
 
 ## The Data
 
 The data contains many categorical features such as the view, condition, number of bedrooms of the houses, as well as numerical features such as squarefoot of the property, house, basement and price of the houses. 
 The highest correlation in the data were between sqft_living and sqft_above with 88%, which we found through a heatmap. One of the features we dropped was therefore the sqft_living column. 
 After having visualised the areas during EDA in Tableau, we created 4 areas to which we assigned the zipcodes. The 4 areas increase by increasing price per price per squarefoot. We created bins for the columns yr_renovated, yr_built and bathroom. 
-We removed an outlier (33) in the number of bedrooms. 
+We removed an outlier (33) in the number of bedrooms and changed the datetime format of the selling date as well as the categorical features to strings.
 No duplicates or null values were found in the data. 
-
-
-
-
 
 ## Visualisation
 For the house sizes we found there is a trend for increasing prices with increasing house size. However the scatter plot also shows a density of data points for a regular house size. There is a reference line at $650.000 houses to compare the difference to the cheaper houses.
@@ -44,6 +40,15 @@ The trend for the grade compared to the house price is more clear. With better g
 ![Condition_view](https://user-images.githubusercontent.com/81168853/115725250-f915db80-a381-11eb-8fee-f33ab584eb4d.png)
 
 ## Machine Learning 
+In the first iteration of the machine learning the accuracy score was  R2: 73% -- test R2: 72%
+This was after we had introducted the column areas. The binning of the columns yr_renovated, yr_built and bathroom were making the accuracy of the first iteration worse, so we decided to undo that. 
+Before the second iteration to improve we implied several data pre-processing steps. The logarithmic transformation for the sqft columns, for which we plotted the histograms and the qq method graph. For three of the size (sqft) columns this was a better fit. We dropped the basement size column to simplify, otherwise we could have dealt with the zeros (house has no basement). 
+We furthermore used the normalization and standardization for the numerical columns. Unfortunately after these 3 steps the model accuracy dropped to train R2: 70% -- test R2: 66%.
+The next step was to encode the categorical columns and run the third iteration: train R2: 78% -- test R2: 73%, which is better than the result of the first iteration. 
+
+
+
+
 
 
 
