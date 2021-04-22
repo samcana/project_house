@@ -39,7 +39,7 @@ With the features condition and grade you can see that the condition is at least
 The trend for the grade compared to the house price is more clear. With better grades the house prices increase. 
 ![Condition_view](https://user-images.githubusercontent.com/81168853/115725250-f915db80-a381-11eb-8fee-f33ab584eb4d.png)
 
-[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
+[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Project_House_Story?publish=yes)
 [Tableau: Expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
 
 ## Machine Learning 
@@ -76,6 +76,8 @@ As an outlook another step is to deal with the outliers of the sqft_lot15 column
 
 [Jupyter Notebook](https://github.com/samcana/project_house/blob/main/machine_learning_real_estate.ipynb)
 
-[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Housing_Dashboard?publish=yes)
+[Tableau](https://public.tableau.com/profile/sam.katterfield#!/vizhome/Tableau_Task_16190903588900/Project_House_Story?publish=yes)
 
 [Tableau: Expensive houses](https://public.tableau.com/profile/isabeljabs#!/vizhome/Project_House/Areas?publish=yes)
+
+[SQL](https://github.com/samcana/project_house/blob/main/SQL/SQL_Queries.sql)
