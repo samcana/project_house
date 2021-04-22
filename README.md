@@ -26,6 +26,7 @@ Process Documentation: [Log file](https://docs.google.com/document/d/1vGG2OElHPC
 ## The Data
 
 ![Bildschirmfoto 2021-04-22 um 17 45 21](https://user-images.githubusercontent.com/81168853/115744104-8d883a00-a392-11eb-9ef3-4654a0902a26.png)
+
 We have a dataset of sold houses located in Seattle. The data contains many categorical features such as the view, condition, number of bedrooms of the houses, as well as numerical features such as squarefoot of the property, house, basement and price of the houses. 
 The highest correlation in the data were between sqft_living and sqft_above with 88%, which we found through a heatmap. One of the features we dropped was therefore the sqft_living column. 
 After having visualised the areas during EDA in Tableau, we created 4 areas to which we assigned the zipcodes. The 4 areas increase by increasing price per price per squarefoot. We created bins for the columns yr_renovated, yr_built and bathroom. 
